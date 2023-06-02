@@ -1,0 +1,317 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ul, li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+
+body{
+    background-color: white;
+    color: #333;
+    font-family: "굴림";
+    font-size: 14px;
+}
+
+#wrap{
+    width: 100%;
+    height: 920px;
+    background-color: wheat;
+}
+
+.left{
+    width: 200px;
+    height: 800px;
+    background-color: white;
+    float: left;
+}
+.logo{
+    text-align: center;
+}
+.logo a{
+    display: block;
+    width: 171px;
+    height: 115px;
+}
+.logo a img{}
+
+.nav{ }
+.main{
+    width: 180px;
+    margin: 20px 0 auto;
+}
+.main>li{
+    position: relative;
+}
+.main>li>a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    background-color: pink;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+.main>li:hover>a{
+    background-color: hotpink;
+    color: white;
+}
+.main>li>a.on{
+    background-color: hotpink;
+    color: white;
+}
+.sub{
+    position: absolute;
+    left: 180px;
+    top: 135px;
+    width: calc(1920px - 190px);
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 100;
+}
+
+.sub>li>ul>li{
+    display: inline-block;
+}
+.sub>li>ul>li a{
+    display: block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #eee;
+}
+.sub>li>ul>li a:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #333;
+}
+
+.img_slide{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+}
+.move{
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.move li{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.move li img{
+    width: 100%;
+    height: 100%;
+}
+
+.link{
+    width: 100%;
+    height: 150px;
+    background-color: azure;
+    padding: 10px;
+}
+.link_list{
+    text-align: center;
+    /* display: flex;
+    justify-content: space-between; */
+}
+.link_list li{
+    text-align: center;
+    width: 100px;
+    display: inline-block;
+    margin: 0 30px    ;
+    border: 1px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.link_list li a{
+    display: block;
+    
+}
+.link_list li a img{
+    width: 100px;
+    height: 100px;
+}
+.link_list li a span{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+
+
+
+.right{
+    width: calc(100% - 200px);
+    height: 800px;
+    background-color: papayawhip;
+    float: right;
+}
+
+.contents{
+    width: 100%;
+    height: 250px;
+    background-color: azure;
+    padding: 10px;
+}
+.contents>div{
+    float: left;
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+    border: 1px solid black;
+}
+.contents h2{
+    font-size: 14px;
+    background-color: #eee;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.contents ul{
+    background-color: #eee;
+    width: 100%;
+    height: 160px;
+    padding: 10px;
+}
+
+.notice{}
+.notice li{
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px dotted darkmagenta;
+}
+.notice li a{
+    display: block;
+    width: 500px;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.notice li span{
+    float: right;
+}
+
+.gallery{
+    text-align: center;
+}
+.gallery li{
+    display: inline-block;
+    width: 100px;
+    margin: 0 30px;
+}
+.gallery li a{
+    
+}
+.gallery li a img{
+    width: 100%;
+}
+.gallery li a span{
+    font-size: 12px;
+}
+
+
+
+
+.footer{
+    clear: both;
+    width: 100%;
+    height: 120px;
+    background-color: skyblue;
+}
+
+.f_logo{
+    width: 200px;
+    height: 100px;
+    float: left;
+    background-color: #eee;
+    text-align: center;
+    padding: 15px;
+}
+
+.copylight{
+    float: left;
+    width: calc(100% - 200px - 300px);
+    height: 100px;
+    background-color: lavender;
+    text-align: center;
+}
+.T_copy{
+    line-height: 50px;
+    border-bottom: 1px solid white;
+}
+.T_copy a::after{
+    content: "|";
+    display: inline-block;
+    padding-left: 10px;
+}
+.T_copy a:last-child:after{
+    display: none;
+}
+.F_copy{
+    line-height: 50px;
+}
+.family{
+    width: 300px;
+    height: 100px;
+    float: right;
+    background-color: lightpink;
+    text-align: center;
+    padding-top: 25px;
+}
+.family select{
+    width: 180px;
+    height: 50px;
+}
+
+
+.popup{
+    width: 500px;
+    height: 600px;
+    background-color: white;
+    border: 5px solid lightslategray;
+    border-radius: 10px;
+    box-shadow: 0 1px 30px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 30px;
+}
+.popup h2{
+    text-align: center;
+    padding: 50px 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: hotpink;
+    border-bottom: 2px dotted pink;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+}
+.popup p{
+    padding: 30px;
+    text-align: justify;
+    line-height: 3;
+    font-size: 13px;
+    color: palevioletred;
+}
+.popup .close{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+    padding: 15px 20px;
+    background-color: lemonchiffon;
+    border-color: palevioletred;
+    cursor: pointer;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 15px;
+}
